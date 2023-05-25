@@ -2,7 +2,7 @@
 Practicals of Artificial Intelligence and Cloud Computing
 
 ## Artificial Intelligence
-### 1. DFS and BFS
+### 1. [DFS and BFS](https://github.com/SagarSharma1702/Laboratory-Practices-2/blob/main/DFS_%26_BFS.ipynb)
 ### 2. A* Algorithm
 ### 3. Greedy Search Algorithm for Selection Sort
 ### 4. N-Queens Problem  
