@@ -1,0 +1,84 @@
+﻿Installation and configure Google App Engine.
+Q. Installation and configure Google App Engine and Implement Binary Search using any programming language
+ 
+Stps  : 
+1. Login to your google account
+2. Search console.cloud.google.com in browser
+3. Click on Select Project 
+4. Click on New Project
+5. Give Project Name (Here LP2)
+6. Click on Create
+7. Click on Select Project
+8. In search bar, type App Engine
+9. Click on App Engine (Welcome screen will appear)
+10. Click on Create Application
+11. Click on next
+12. Click on I will do it later
+13. In search bar, type App Engine admin API
+14. Click on App Engine admin API 
+15. Click Enable
+16. Click on Activate Cloud Shell (Near Search Bar)
+17. Click on Continue
+18. Login to github
+19. Create New Repository with name ‘LP2’
+20. Create a new file by Clicking on Creating a New File
+21. Give any name to Python File (Here BinarySearch.py)
+22. Type your Code :
+# Python 3 program for recursive binary search.
+# Returns index of x in arr if present, else -1
+def binary_search(arr, low, high, x):
+
+
+        # Check base case
+        if high >= low:
+
+
+                mid = (high + low) // 2
+
+
+                # If element is present at the middle itself
+                if arr[mid] == x:
+                        return mid
+
+
+                # If element is smaller than mid, then it can only
+                # be present in left subarray
+                elif arr[mid] > x:
+                        return binary_search(arr, low, mid - 1, x)
+
+
+                # Else the element can only be present in right subarray
+                else:
+                        return binary_search(arr, mid + 1, high, x)
+
+
+        else:
+                # Element is not present in the array
+                return -1
+
+
+# Test array
+arr = [ 2, 3, 4, 10, 40 ]
+x = 10
+
+
+# Function call
+result = binary_search(arr, 0, len(arr)-1, x)
+
+
+if result != -1:
+        print("Element is present at index", str(result))
+else:
+        print("Element is not present in array")
+
+
+ 
+23. Click on Commit Changes
+24. Click on Code and copy URL (here https://github.com/SagarSharma1702/LP2.git)
+25. Goto Cloud Platform and type 
+‘git clone https://github.com/SagarSharma1702/LP2.git‘ in Cloud Shell
+26. Type ls (Repository Name will be Visible)
+27. Enter using command cd {Repository name} (here LP2)
+28. Type ls (Python File will be visible)
+29. Type python {file name (here BinarySearch.py)}
+30. Output will be visible
